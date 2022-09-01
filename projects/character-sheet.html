@@ -68,38 +68,80 @@
             <span class="sr-only">Next</span>
         </span>
     </button>
-</div>
+    </div>
 
 
-  <div class="my-28 text-white md:w-9/12 m-auto text-lg">
-    <p class="mb-6">
-Esse projeto foi criado para facilitar o gerenciamento de personagem, pois, usar papel é exaustivo de ficar apagando a vida e mudando alguma coisa. Então, porque não criar um aplicativo para facilitar, e também porque não colocar uma página que mostrar os dados rolando e botar ele na tv, em vai decidir que o personagem vai ter azar ou sorte.
-</p>
+      <div class="my-28 text-white md:w-9/12 m-auto text-lg">
+        <p class="mb-6">
+          Para quem não sabe o que é RPG de mesa, deixe-me explicar. <br>
+          RPG de Mesa é um jogo onde jogadores se juntam ao redor de uma mesa e interpretam personagens criados por eles, dando uma cara e um perfil com emoções, falas, habilidades e trejeitos, dentro de aventuras estipuladas por um sistema de um mundo fantástico.
+        </p>
 
-<p class="mb-6">
-Nesse projeto, eu utilizei a linguagem <span class="text-green-400">Ruby</span> e os framework <span class="text-green-400">Ruby on Rails e Boostrap</span> e além disso, usei recursos como <span class="text-green-400">Action cable</span> para usar o websocket para rolar os dados e também o GM ver as vidas do seus jogadores participantes e Postgresql como banco de dados.
-</p>
+        <p class="mb-6">
+          O motivo de eu ter criado esse aplicativo é que, é meio cansativo gerenciar o personagem no papel, então eu pensei, por que não criar um aplicativo que gerenciar a ficha do personagem.
+        </p>
 
-<p class="mb-6">
-As gems e biblioteca utilizado foram:<br>
-Clearance para autenticação com email e senha;<br>
-Friendly id para deixar a url mais bonita;<br>
-Redis para rodar action cable;<br>
-<a class="text-green-400" target="_blank" href="https://github.com/3d-dice/dice-box">Dice-Box3d</a> para ter as animações dos dados.
-</p>
+        <p class="mb-6">
+          Só que fui um passo além, por que não colocar uma página onde você ver uma mesa e um chat, em que, a partir do seu celular na página do seu personagem, você pode rolar um dado para ver na página de mesa. Então para caso da página de mesa, é recomendável que seja na tv, pois é maior e dessa forma todo mundo do grupo consegue ver o resultado do dado.
+        </p>
 
-<p class="mb-6">
-Apesar de eu considerar que já está concluído, ainda falta muita coisas, como magias, sistema de ataque etc. 
-</p>
+        <p class="mb-6">
+          Também tem outro recurso, em que o mestre consegue ver as vidas dos personagens dos jogadores, para caso ele planeja ferrar os personagens.
+        </p>
 
-<p>
-Infelizmente, não está no ar, pois, o heroku, a qual eu usava para hospedar, terminou com serviço gratuito. Então, unica forma que você pode ver isso rodando na sua maquina.
-Eu coloquei um passo a passo no github, clique <a class="text-green-400" target="_blank" href="https://github.com/XandeKK/Character-Sheet">aqui</a>.
-</p>
-  </div>
-</div>
+        <p class="mb-6">
+          Bem, agora eu vou mostrar quais foram as tecnologias que foram usados e possivelmente explicar o porquê desse especifico tecnologia.
+        </p>
 
-<p class="text-green-400"></p>
+        <h3 class="text-4xl mb-3 text-pink-500">As tecnologias</h3>
+        <div class="ml-8 mb-6">
+          <ul class="list-disc list-inside">
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Linguagem</h4>
+            <li>Ruby - Versão 3.1.2</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Frameworks</h4>
+            <li>Ruby on Rails - Versão 7.0.3.1</li>
+            <li>Boostrap - Versão 5.2</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Banco de dado</h4>
+            <li>PostgreSQL - Versão Ubuntu 14.5.1.pgdg22.04+1</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Gem</h4>
+            <li>Clearance - Versão 2.6.0</li>
+            <p class="ml-4 mb-3">O Clearance é usado para autenticação com email e senha.</p>
+            <li>Active Storage Base64 - Versão 2.0.0</li>
+            <p class="ml-4 mb-3">O Active Storage Base64 adiciona o suporte de Base64 no Active Storage.</p>
+            <li>Friendly id - Versão 5.4.0</li>
+            <p class="ml-4 mb-3">O Friendly id permite que você crie um URL's agradáveis.</p>
+            <li>Image processing - Versão 1.2</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Biblioteca de javascript</h4>
+            <li>@3d-dice/dice-box - Versão 1.0.5</li>
+            <p class="ml-4 mb-3">O Dice box foi usado para animação 3d de dados.</p>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Software de terceiros</h4>
+            <li>libvips - Versão 8.6+ ou ImageMagick - Versão 7.1.0-47</li>
+            <p class="ml-4 mb-3">O libvips/ImageMagick é necessário para transformação e análise de imagem.</p>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Outros</h4>
+            <li>Active Record - Versão 7.0.3.1</li>
+            <li>Active Storage - Versão 7.0.3.1</li>
+            <li>pg - Versão 1.1</li>
+            <li>Turbo Rails - Versão 1.1.1</li>
+            <li>Importmap Rails - Versão 1.1.5</li>
+            <li>puma - Versão 5.0</li>
+            <li>Sprockets Rails - Versão 3.4.2</li>
+            <li>Jbuilder - Versão 2.11.5</li>
+            <li>Stimulus Rails - Versão 1.1.0</li>
+            <li>Redis - Versão 4.8.0</li>
+            <li>Tzinfo Data - Versão 1.2022.3</li>
+          </ul>
+        </div>
+
+        <p class="mb-6">
+          Apesar de eu considerar que já está concluído, ainda falta muitas coisas, como magias, sistema de ataque etc. 
+        </p>
+
+        <p>
+          Infelizmente, o projeto não está no ar, pois, o Heroku, a qual eu usava para hospedar, terminou com serviço gratuito. Então, única forma que você pode ver isso rodando na sua máquina.
+          Eu coloquei um passo a passo no Github, clique <a class="text-green-400" target="_blank" href="https://github.com/XandeKK/Character-Sheet">aqui</a>.
+        </p>
+      </div>
+    </div>
 
     </main>
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
