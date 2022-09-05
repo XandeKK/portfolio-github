@@ -40,24 +40,27 @@
   </nav>
   <main class="md:px-4 px-2 w-full">
     <div>
-      <h1 class="font-bold text-4xl text-center my-10 text-white">Character Sheet</h1>
+      <h1 class="font-bold text-4xl text-center my-10 text-white">Audio player</h1>
       <div id="default-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-60 overflow-hidden rounded-lg md:h-[36rem]">
           <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet/2.png" />
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/audio-player/1.png" />
           </div>
           <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet/3.png" />
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/audio-player/2.png" />
           </div>
           <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet/1.png" />
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/audio-player/3.png" />
           </div>
           <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet/4.png" />
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/audio-player/4.png" />
           </div>
           <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet/5.png" />
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/audio-player/5.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/audio-player/6.png" />
           </div>
         </div>
         <!-- Slider controls -->
@@ -80,20 +83,10 @@
       </div>
       <div class="my-28 text-white md:w-9/12 m-auto text-lg">
         <p class="mb-6">
-          Para quem não sabe o que é RPG de mesa, deixe-me explicar. <br>
-          RPG de Mesa é um jogo onde jogadores se juntam ao redor de uma mesa e interpretam personagens criados por eles, dando uma cara e um perfil com emoções, falas, habilidades e trejeitos, dentro de aventuras estipuladas por um sistema de um mundo fantástico.
+          O projeto foi criado para estudo de resolução de problema como n+1, e também estudar sobre teste de sistema, que particulamente, achei trabalhoso de configurar no meu notebook fraco.
         </p>
         <p class="mb-6">
-          O motivo de eu ter criado esse aplicativo é que, é meio cansativo gerenciar o personagem no papel, então eu pensei, por que não criar um aplicativo que gerenciar a ficha do personagem.
-        </p>
-        <p class="mb-6">
-          Só que fui um passo além, por que não colocar uma página onde você ver uma mesa e um chat, em que, a partir do seu celular na página do seu personagem, você pode rolar um dado para ver na página de mesa. Então para caso da página de mesa, é recomendável que seja na tv, pois é maior e dessa forma todo mundo do grupo consegue ver o resultado do dado.
-        </p>
-        <p class="mb-6">
-          Também tem outro recurso, em que o mestre consegue ver as vidas dos personagens dos jogadores, para caso ele planeja ferrar os personagens.
-        </p>
-        <p class="mb-6">
-          Bem, agora eu vou mostrar quais foram as tecnologias que foram usados e possivelmente explicar o porquê desse especifico tecnologia.
+          Clique <a class="text-green-400" target="_blank" href="https://github.com/XandeKK/Character-Sheet">aqui</a>, se quiser ver o repositório.
         </p>
         <h3 class="text-4xl mb-3 text-pink-500">As tecnologias</h3>
         <div class="ml-8 mb-6">
@@ -102,20 +95,13 @@
             <li>Ruby - Versão 3.1.2</li>
             <h4 class="text-3xl -ml-4 my-4 text-sky-400">Frameworks</h4>
             <li>Ruby on Rails - Versão 7.0.3.1</li>
-            <li>Boostrap - Versão 5.2</li>
+            <li>Tailwind - Versão 3.1.8</li>
             <h4 class="text-3xl -ml-4 my-4 text-sky-400">Banco de dado</h4>
             <li>PostgreSQL - Versão Ubuntu 14.5.1.pgdg22.04+1</li>
             <h4 class="text-3xl -ml-4 my-4 text-sky-400">Gem</h4>
             <li>Clearance - Versão 2.6.0</li>
             <p class="ml-4 mb-3">O Clearance é usado para autenticação com email e senha.</p>
-            <li>Active Storage Base64 - Versão 2.0.0</li>
-            <p class="ml-4 mb-3">O Active Storage Base64 adiciona o suporte de Base64 no Active Storage.</p>
-            <li>Friendly id - Versão 5.4.0</li>
-            <p class="ml-4 mb-3">O Friendly id permite que você crie um URL's agradáveis.</p>
             <li>Image processing - Versão 1.2</li>
-            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Biblioteca de javascript</h4>
-            <li>@3d-dice/dice-box - Versão 1.0.5</li>
-            <p class="ml-4 mb-3">O Dice box foi usado para animação 3d de dados.</p>
             <h4 class="text-3xl -ml-4 my-4 text-sky-400">Software de terceiros</h4>
             <li>libvips - Versão 8.6+ ou ImageMagick - Versão 7.1.0-47</li>
             <p class="ml-4 mb-3">O libvips/ImageMagick é necessário para transformação e análise de imagem.</p>
@@ -129,17 +115,9 @@
             <li>Sprockets Rails - Versão 3.4.2</li>
             <li>Jbuilder - Versão 2.11.5</li>
             <li>Stimulus Rails - Versão 1.1.0</li>
-            <li>Redis - Versão 4.8.0</li>
             <li>Tzinfo Data - Versão 1.2022.3</li>
           </ul>
         </div>
-        <p class="mb-6">
-          Apesar de eu considerar que já está concluído, ainda falta muitas coisas, como magias, sistema de ataque etc.
-        </p>
-        <p>
-          Infelizmente, o projeto não está no ar, pois, o Heroku, a qual eu usava para hospedar, terminou com serviço gratuito. Então, única forma que você pode ver isso rodando na sua máquina.
-          Eu coloquei um passo a passo no Github, clique <a class="text-green-400" target="_blank" href="https://github.com/XandeKK/Character-Sheet">aqui</a>.
-        </p>
       </div>
     </div>
   </main>

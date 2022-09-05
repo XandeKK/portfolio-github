@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
-  <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body class="dark:bg-gray-800">
-    <nav class="sticky top-0 left-0 right-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 z-30">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a class="flex items-center" href="/portfolio-github">
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Home</span>
-</a>    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="hamburger-icon">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" id="list-navbar">
-        <li>
-          <a href="https://www.linkedin.com/in/alexandre-dos-santos-alves-707921206/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/XandeKK/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-            <span class="sr-only">GitHub account</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <main class="md:px-4 px-2 w-full">
-      <div>
-  <h1 class="font-bold text-4xl text-center my-10 text-white">EsporteX</h1>
+<head>
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-  <div id="default-carousel" class="relative" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-60 overflow-hidden rounded-lg md:h-[36rem]">
-          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-              <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/1.png" />
-          </div>
-          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-              <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/3.png" />
-          </div>
-          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-              <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/6.png" />
-          </div>
-          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-              <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/4.png" />
-          </div>
-          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-              <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/2.png" />
-          </div>
-          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
-              <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/5.png" />
-          </div>
+<body class="dark:bg-gray-800">
+  <nav class="sticky top-0 left-0 right-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 z-30">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a class="flex items-center" href="/portfolio-github">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Home</span>
+      </a> <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="hamburger-icon">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" id="list-navbar">
+          <li>
+            <a href="https://www.linkedin.com/in/alexandre-dos-santos-alves-707921206/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/XandeKK/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+  </nav>
+  <main class="md:px-4 px-2 w-full">
+    <div>
+      <h1 class="font-bold text-4xl text-center my-10 text-white">EsporteX</h1>
+      <div id="default-carousel" class="relative" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-60 overflow-hidden rounded-lg md:h-[36rem]">
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/1.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/3.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/6.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/4.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/2.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/esportex/5.png" />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
             <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
             <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
-  <div class="my-28 text-white md:w-9/12 m-auto text-lg">
+          </span>
+        </button>
+      </div>
+      <div class="my-28 text-white md:w-9/12 m-auto text-lg">
         <p class="mb-6">
           Imagine em uma situação em que você está assistindo um jogo de um esporte, seja vôlei, basquete, futebol ou etc. <br>
           Depois de você uma partida acirrada, sobe aquela vontade de querer praticar o tal esporte.
           Só que você percebe que não tem ninguém que joga ou queira jogar.
           Então você fica triste e entrar em depressão, mentira, calma aí, você não vai entrar depressão, só porque você não conhece ninguém que queira jogar.
         </p>
-
-        <p class="mb-6"> 
+        <p class="mb-6">
           Bem, agora sem esperança, você decide procurar no google, para descobrir como se encontrar alguém que tem mesmo interesse, mas maiorias dos artigos falam para você procurar no Instagram e isso dá trabalho, só que você ver um artigo, que fala sobre a existência de um aplicativo chamado EsporteX.
         </p>
-
         <p class="mb-6">
           O aplicativo EsporteX é uma rede social, focado para esporte, em que o objetivo é você encontrar pessoas que tem o mesmo interesse na mesma cidade que você. E além disso, tem um recurso em que você marcar uma partida e essa partida vai ficar disponível para outros próximo de você.
         </p>
-
         <p class="mb-6">
           É mesmo, só uma observação, é que a situação que eu citei que tinha um artigo EsporteX é era uma situação hipotético.
         </p>
-
         <p class="mb-6">
           Bem, agora eu vou mostrar quais foram as tecnologias que foram usados e possivelmente explicar o porquê desse especifico tecnologia.
         </p>
-
         <h3 class="text-4xl mb-3 text-pink-500">As tecnologias</h3>
         <div class="ml-8 mb-6">
           <ul class="list-disc list-inside">
@@ -132,21 +135,18 @@
             <li>Stimulus Rails - Versão 1.0.4</li>
           </ul>
         </div>
-
         <p class="mb-6">
           Apesar de eu considerar que já está concluído, ainda recurso de amizade, feed, chat, etc.
         </p>
-
         <p>
           Infelizmente, o projeto não está no ar, pois, o Heroku, a qual eu usava para hospedar, terminou com serviço gratuito. Então, única forma que você pode ver isso rodando na sua máquina.
           Eu coloquei um passo a passo no GitHub, clique <a class="text-green-400" target="_blank" href="https://github.com/XandeKK/esportex-web">aqui</a>.
         </p>
       </div>
     </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+</body>
 
-</div>
-
-    </main>
-    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
-  </body>
 </html>

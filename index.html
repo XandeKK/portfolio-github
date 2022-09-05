@@ -1,145 +1,143 @@
 <!DOCTYPE html>
 <html class="scroll-smooth dark">
-  <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body class="dark:bg-gray-800">
-    <nav class="sticky top-0 left-0 right-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 z-30">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a class="flex items-center" href="/portfolio-github">
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Home</span>
-      </a>    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="hamburger-icon">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" id="list-navbar">
-        <li>
-          <a href="#project" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projeto</a>
-        </li>
-        <li>
-          <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/alexandre-dos-santos-alves-707921206/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/XandeKK/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-            <span class="sr-only">GitHub account</span>
-          </a>
-        </li>
-      </ul>
+<head>
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="dark:bg-gray-800">
+  <nav class="sticky top-0 left-0 right-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 z-30">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a class="flex items-center" href="/portfolio-github">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Home</span>
+      </a> <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="hamburger-icon">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" id="list-navbar">
+          <li>
+            <a href="#project" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projeto</a>
+          </li>
+          <li>
+            <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alexandre-dos-santos-alves-707921206/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/XandeKK/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-    <main class="md:px-4 px-2 w-full">
-      <div class="mt-12">
-  <div>
-    <img class="mx-auto w-56 h-56 rounded-full" src="https://avatars.githubusercontent.com/u/80427458?v=4" alt="image description">
-    <h3 class="text-center mt-4 font-bold md:text-5xl text-2xl text-white">Alexandre <span class="text-green-400">dos Santos Alves</span></h3>
-  </div>
-
-  <div class="my-20 mx-auto">
-    <h1 id="project" class="text-center mt-4 font-bold md:text-6xl text-4xl text-white">Projetos</h1>
-    <hr class="my-4 mx-auto w-60 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
-
-    <div class="my-10">
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 ">
-          <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-green-400 text-white" href="./projects/character-sheet.html">
-            <img class="mx-auto md:w-56 md:h-56 w-32 h-32 rounded-full" src="./assets/character-sheet/character-sheet.png" />
-            <div class="text-center my-3 font-bold text-2xl">Character Sheet</div>
-</a>          <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-green-400 text-white" href="./projects/esportex.html">
-            <img class="mx-auto md:w-56 md:h-56 w-32 h-32 rounded-full" src="./assets/esportex/esportex.png" />
-            <div class="text-center my-3 font-bold text-2xl">EsporteX</div>
-</a>      </div>
+  </nav>
+  <main class="md:px-4 px-2 w-full">
+    <div class="mt-12">
+      <div>
+        <img class="mx-auto w-56 h-56 rounded-full" src="https://avatars.githubusercontent.com/u/80427458?v=4" alt="image description">
+        <h3 class="text-center mt-4 font-bold md:text-5xl text-2xl text-white">Alexandre <span class="text-green-400">dos Santos Alves</span></h3>
+      </div>
+      <div class="my-20 mx-auto">
+        <h1 id="project" class="text-center mt-4 font-bold md:text-6xl text-4xl text-white">Projetos</h1>
+        <hr class="my-4 mx-auto w-60 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+        <div class="my-10">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 ">
+            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-green-400 text-white" href="./projects/character-sheet.html">
+              <img class="mx-auto md:w-56 md:h-56 w-32 h-32 rounded-full" src="./assets/character-sheet/character-sheet.png" />
+              <div class="text-center my-3 font-bold text-2xl">Character Sheet</div>
+            </a>
+            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-green-400 text-white" href="./projects/esportex.html">
+              <img class="mx-auto md:w-56 md:h-56 w-32 h-32 rounded-full" src="./assets/esportex/esportex.png" />
+              <div class="text-center my-3 font-bold text-2xl">EsporteX</div>
+            </a>
+            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-green-400 text-white" href="./projects/audio-player.html">
+              <img class="mx-auto md:w-56 md:h-56 w-32 h-32 rounded-full" src="./assets/audio-player/audio-player.png" />
+              <div class="text-center my-3 font-bold text-2xl">Audio Player</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="my-20 mx-auto text-white md:w-6/12 m-auto text-lg">
+        <h1 id="about" class="text-center mt-4 font-bold md:text-6xl text-4xl text-white">Sobre</h1>
+        <hr class="my-4 mx-auto w-60 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
+        <p class="mb-6">
+          Bem, olá.
+        </p>
+        <p class="mb-6">
+          Eu sou <span class="text-green-400">Alexandre</span>, como você pode ter visto o nome bem grande embaixo da foto.
+          Não sou muito bom em expressar de como eu sou ou quem eu sou, então eu vou simplesmente escrever o que eu penso.
+        </p>
+        <p class="mb-6">
+          Para começar, podemos dizer que eu sou muito curioso nos assuntos que me interessam, eu gosto descobrir e experimentar coisas novas, por exemplo, desenhar, praticar esportes e desenvolver <span class="text-green-400">softwares</span> que facilita a minha vida.
+        </p>
+        <p class="mb-6">
+          Vou dividir as categorias de conhecimentos e também o nível que eu considero estar:
+          <h4 class="text-2xl text-violet-400 mb-3">Linguagens de programação</h4>
+          <h5 class="text-xl text-sky-400 ml-3">Python - <span class="text-yellow-400">Básico</span></h5>
+          <p class="mb-3 ml-6">Essa foi a minha primeira linguagem, então eu usei-a como base para estudo no mundo de programação, porém não teve muito avanço nessa linguagem.</p>
+          <p class="mb-1 ml-6">O máximo que eu fiz foi:</p>
+          <ul class="list-disc list-inside mb-3 ml-6">
+            <li>uma web scraper;</li>
+            <li>um aplicativo mobile usando <span class="text-sky-400">Ki</span><span class="text-yellow-400">vy</span>;</li>
+            <li>alguns scripts que automatizava coisas que faço em dia a dia.</li>
+          </ul>
+          <h5 class="text-xl text-sky-400 ml-3">Gdscript - Básico</h5>
+          <p class="mb-3 ml-6">Eu estava com vontade de criar um jogo, então eu comecei a usar um motor engine <span class="text-sky-400">Godot</span>, que tinha uma própria linguagem chamada de <span class="text-sky-400">Gdscript</span>, que particularmente tem a mesma sintaxe que o <span class="text-sky-400">Python</span>. porém, depois de alguns meses, eu desistir, pois era cansativo, quando você é o único fazendo o jogo, em que você é responsável por literalmente tudo, seja as animações, trilha sonora, história, etc.</p>
+          <p class="mb-3 ml-6">O máximo que eu fiz foi um joguinho pequeno que só tem o personagem principal e só.</p>
+          <h5 class="text-xl text-sky-400 ml-3">C++ - <span class="text-sky-600">Básico a Intermediário</span></h5>
+          <p class="mb-3 ml-6">Apesar de ser a linguagem que eu mais usei, ainda tem coisas que considero muito difíceis, então não sei como avaliar o meu conhecimento sobre isso.</p>
+          <p class="mb-1 ml-6">O máximo que eu fiz foi:</p>
+          <ul class="list-disc list-inside mb-3 ml-6">
+            <li>Um algoritmo de busca binária;</li>
+            <li>Um algoritmo Mini Max para resolver jogo da velha</li>
+            <li>Um algoritmo A* para resolver 15 puzzles ou jogo do 15</li>
+            <li>um aplicativo mobile usando <span class="text-sky-400">QT/QML</span>;</li>
+          </ul>
+          <h5 class="text-xl text-yellow-400 ml-3">JavaScript - Básico</h5>
+          <p class="mb-3 ml-6">Por algum motivo desconhecido, eu não curto o <span class="text-yellow-400">JavaScript</span>, não consigo realmente especificar do porquê eu não gosto. Mas eu sou obrigado a aprender, porém tudo que eu fiz com ele foi um simplesmente um EventListener e algumas logicas básicas.</p>
+          <p class="mb-3 ml-6">Na verdade, acabei de lembrar que no projeto <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, eu usei o <span class="text-yellow-400">JavaScript</span> para construir a interface gráfica dinâmica, mas é só isso mesmo.</p>
+          <h5 class="text-xl text-red-400 ml-3">Java - Básico</h5>
+          <p class="mb-3 ml-6">Bem, eu não sei que deveria citar isto, mas vamos que vamos.</p>
+          <p class="mb-3 ml-6">Não tinha motivo nenhum para eu aprender <span class="text-red-400">Java</span>, mas acontece que um amigo do meu irmão estava cursando no curso de sistema de informação pediu uma ajuda para exercício dele que envolvia o <span class="text-red-400">Java</span>, sobre o assunto de orientação a objeto. Eu já tinha estudado sobre OOP, quando estava usando <span class="text-sky-600">C++</span>, então não teve muito problema.</p>
+          <p class="mb-3 ml-6">Só que o problema é que, quando ele me mandava mais exercício, o nível de dificuldade aumentava e eu não tinha conhecimento de <span class="text-red-400">Java</span>. Então, para ajudar ele, eu decidir estudar um pouco de <span class="text-red-400">Java</span>, para que possa ensinar a ele. E no fim, como eu não podia ficar sempre ajudando, eu indiquei um site <a href="https://www.w3schools.com/" target="_blank" class="text-green-400 underline">W3Schools</a>, depois disso, ele nunca pediu ajuda.</p>
+          <h5 class="text-xl text-rose-600 ml-3">Ruby - Intermediário</h5>
+          <p class="mb-3 ml-6">A linguagem que atualmente estou usando.</p>
+          <p class="mb-3 ml-6">Não tem muito que eu falar sobre ele. Quero dizer, tem os projetos pessoais que fiz, as quais você pode ver na seção de <a href="#project" class="text-green-400 underline">projeto</a>. Então, se quer saber mais detalhes, basta ver um dos <a href="#project" class="text-green-400 underline">projetos<a />.</p>
+          <h4 class="text-2xl text-violet-400 mb-3">Frameworks</h4>
+          <h5 class="text-xl text-green-600 ml-3">QT/QML - Intermediário</h5>
+          <p class="mb-3 ml-6">Um framework, que particularmente gosto muito, utiliza a linguagem <span class="text-sky-600">C++</span>.</p>
+          <p class="mb-3 ml-6">O motivo de eu gostar é o por causa da linguagem de marcação, o <span class="text-green-600">QML</span>, que é tão fácil de criar interface gráfica em comparação a <span class="text-sky-600">C++</span>.</p>
+          <p class="mb-3 ml-6">Eu só tenho um projeto feito com esse framework, que você pode ver no GitHub clicando <a class="text-green-400 underline" href="https://github.com/XandeKK/EsporteX">aqui</a>.</p>
+          <h5 class="text-xl text-rose-600 ml-3">Ruby on Rails - Intermediário</h5>
+          <p class="mb-3 ml-6">O framework que atualmente estou usando.</p>
+          <p class="mb-3 ml-6">Bem, eu não sei falar sobre isso, mas é o que <span class="text-rose-600">RoR</span>, é tão estranhamente bom que não tenho palavras para descrever.</p>
+          <p class="mb-3 ml-6">Os dois projetos, <a href="./projects/esportex.html" class="underline font-bold">EsporteX</a> e <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, utilizam de <span class="text-rose-600">RoR</span>.</p>
+          <h5 class="text-xl text-violet-600 ml-3">Bootstrap - Básico</h5>
+          <p class="mb-3 ml-6">Bem, os projetos, <a href="./projects/esportex.html" class="underline font-bold">EsporteX</a> e <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, são criados com bootstrap. Então é só isso.</p>
+          <p class="mb-3 ml-6">Quero dizer, eu curto a ideia de não usar o <span class="text-sky-600">CSS</span>, porém se não modificar o <span class="text-sky-600">CSS</span> do <span class="text-violet-600">Boostrap</span>, vai ficar com a cara <span class="text-violet-600">Boostrap</span>. Só que isso muda, quando eu conheci o ...</p>
+          <h5 class="text-xl text-sky-600 ml-3">Tailwind - Básico</h5>
+          <p class="mb-3 ml-6">... O <span class="text-sky-600">Tailwind</span></p>
+          <p class="mb-3 ml-6">Meu Deus, como que eu não conheci isso antes de boostrap, os meus dois projetos, os <a href="./projects/esportex.html" class="underline font-bold">EsporteX</a> e <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, seriam mais bonitos e mais user-friendly.</p>
+          <p class="mb-3 ml-6">O portfólio que você está vendo é feito com <span class="text-sky-600">Tailwind</span>. Bonito, não acha?</p>
+        </p>
+        <p class="my-6">Caso você queira entrar em contanto comigo, basta enviar um <a class="font-bold underline decoration-purple-500 " href="mailto:alexandre.dosa@gmail.com">email</a> ou vai lá no superior direito que tem o meu <span class="text-green-400">GitHub</span> e <span class="text-green-400">LinkedIn</span> e pode me mandar um DM.</p>
+      </div>
     </div>
-  </div>
+  </main>
+  <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+</body>
 
-  <div class="my-20 mx-auto text-white md:w-6/12 m-auto text-lg">
-    <h1 id="about" class="text-center mt-4 font-bold md:text-6xl text-4xl text-white">Sobre</h1>
-    <hr class="my-4 mx-auto w-60 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700">
-
-    <p class="mb-6">
-      Bem, olá.
-    </p>
-    <p class="mb-6">
-      Eu sou <span class="text-green-400">Alexandre</span>, como você pode ter visto o nome bem grande embaixo da foto.
-      Não sou muito bom em expressar de como eu sou ou quem eu sou, então eu vou simplesmente escrever o que eu penso.
-    </p>
-    <p class="mb-6">
-      Para começar, podemos dizer que eu sou muito curioso nos assuntos que me interessam, eu gosto descobrir e experimentar coisas novas, por exemplo, desenhar, praticar esportes e desenvolver <span class="text-green-400">softwares</span> que facilita a minha vida.
-    </p>
-    <p class="mb-6">
-      Vou dividir as categorias de conhecimentos e também o nível que eu considero estar:
-      <h4 class="text-2xl text-violet-400 mb-3">Linguagens de programação</h4>
-      <h5 class="text-xl text-sky-400 ml-3">Python - <span class="text-yellow-400">Básico</span></h5>
-      <p class="mb-3 ml-6">Essa foi a minha primeira linguagem, então eu usei-a como base para estudo no mundo de programação, porém não teve muito avanço nessa linguagem.</p>
-      <p class="mb-1 ml-6">O máximo que eu fiz foi:</p>
-      <ul class="list-disc list-inside mb-3 ml-6">
-        <li>uma web scraper;</li>
-        <li>um aplicativo mobile usando <span class="text-sky-400">Ki</span><span class="text-yellow-400">vy</span>;</li>
-        <li>alguns scripts que automatizava coisas que faço em dia a dia.</li>
-      </ul>
-
-      <h5 class="text-xl text-sky-400 ml-3">Gdscript - Básico</h5>
-      <p class="mb-3 ml-6">Eu estava com vontade de criar um jogo, então eu comecei a usar um motor engine <span class="text-sky-400">Godot</span>, que tinha uma própria linguagem chamada de <span class="text-sky-400">Gdscript</span>, que particularmente tem a mesma sintaxe que o <span class="text-sky-400">Python</span>. porém, depois de alguns meses, eu desistir, pois era cansativo, quando você é o único fazendo o jogo, em que você é responsável por literalmente tudo, seja as animações, trilha sonora, história, etc.</p>
-      <p class="mb-3 ml-6">O máximo que eu fiz foi um joguinho pequeno que só tem o personagem principal e só.</p>
-
-      <h5 class="text-xl text-sky-400 ml-3">C++ - <span class="text-sky-600">Básico a Intermediário</span></h5>
-      <p class="mb-3 ml-6">Apesar de ser a linguagem que eu mais usei, ainda tem coisas que considero muito difíceis, então não sei como avaliar o meu conhecimento sobre isso.</p>
-      <p class="mb-1 ml-6">O máximo que eu fiz foi:</p>
-      <ul class="list-disc list-inside mb-3 ml-6">
-        <li>Um algoritmo de busca binária;</li>
-        <li>Um algoritmo Mini Max para resolver jogo da velha</li>
-        <li>Um algoritmo A* para resolver 15 puzzles ou jogo do 15</li>
-        <li>um aplicativo mobile usando <span class="text-sky-400">QT/QML</span>;</li>
-      </ul>
-
-      <h5 class="text-xl text-yellow-400 ml-3">JavaScript - Básico</h5>
-      <p class="mb-3 ml-6">Por algum motivo desconhecido, eu não curto o <span class="text-yellow-400">JavaScript</span>, não consigo realmente especificar do porquê eu não gosto. Mas eu sou obrigado a aprender, porém tudo que eu fiz com ele foi um simplesmente um EventListener e algumas logicas básicas.</p>
-      <p class="mb-3 ml-6">Na verdade, acabei de lembrar que no projeto <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, eu usei o <span class="text-yellow-400">JavaScript</span> para construir a interface gráfica dinâmica, mas é só isso mesmo.</p>
-
-      <h5 class="text-xl text-red-400 ml-3">Java - Básico</h5>
-      <p class="mb-3 ml-6">Bem, eu não sei que deveria citar isto, mas vamos que vamos.</p>
-      <p class="mb-3 ml-6">Não tinha motivo nenhum para eu aprender <span class="text-red-400">Java</span>, mas acontece que um amigo do meu irmão estava cursando no curso de sistema de informação pediu uma ajuda para exercício dele que envolvia o <span class="text-red-400">Java</span>, sobre o assunto de orientação a objeto. Eu já tinha estudado sobre OOP, quando estava usando <span class="text-sky-600">C++</span>, então não teve muito problema.</p>
-      <p class="mb-3 ml-6">Só que o problema é que, quando ele me mandava mais exercício, o nível de dificuldade aumentava e eu não tinha conhecimento de <span class="text-red-400">Java</span>. Então, para ajudar ele, eu decidir estudar um pouco de <span class="text-red-400">Java</span>, para que possa ensinar a ele. E no fim, como eu não podia ficar sempre ajudando, eu indiquei um site <a href="https://www.w3schools.com/" target="_blank" class="text-green-400 underline">W3Schools</a>, depois disso, ele nunca pediu ajuda.</p>
-
-      <h5 class="text-xl text-rose-600 ml-3">Ruby - Intermediário</h5>
-      <p class="mb-3 ml-6">A linguagem que atualmente estou usando.</p>
-      <p class="mb-3 ml-6">Não tem muito que eu falar sobre ele. Quero dizer, tem os projetos pessoais que fiz, as quais você pode ver na seção de <a href="#project" class="text-green-400 underline">projeto</a>. Então, se quer saber mais detalhes, basta ver um dos <a href="#project" class="text-green-400 underline">projetos<a/>.</p>
-
-      <h4 class="text-2xl text-violet-400 mb-3">Frameworks</h4>
-
-      <h5 class="text-xl text-green-600 ml-3">QT/QML - Intermediário</h5>
-      <p class="mb-3 ml-6">Um framework, que particularmente gosto muito, utiliza a linguagem <span class="text-sky-600">C++</span>.</p>
-      <p class="mb-3 ml-6">O motivo de eu gostar é o por causa da linguagem de marcação, o <span class="text-green-600">QML</span>, que é tão fácil de criar interface gráfica em comparação a <span class="text-sky-600">C++</span>.</p>
-      <p class="mb-3 ml-6">Eu só tenho um projeto feito com esse framework, que você pode ver no GitHub clicando <a class="text-green-400 underline" href="https://github.com/XandeKK/EsporteX">aqui</a>.</p>
-
-      <h5 class="text-xl text-rose-600 ml-3">Ruby on Rails - Intermediário</h5>
-      <p class="mb-3 ml-6">O framework que atualmente estou usando.</p>
-      <p class="mb-3 ml-6">Bem, eu não sei falar sobre isso, mas é o que <span class="text-rose-600">RoR</span>, é tão estranhamente bom que não tenho palavras para descrever.</p>
-      <p class="mb-3 ml-6">Os dois projetos, <a href="./projects/esportex.html" class="underline font-bold">EsporteX</a> e <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, utilizam de <span class="text-rose-600">RoR</span>.</p>
-
-      <h5 class="text-xl text-violet-600 ml-3">Bootstrap - Básico</h5>
-      <p class="mb-3 ml-6">Bem, os projetos, <a href="./projects/esportex.html" class="underline font-bold">EsporteX</a> e <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, são criados com bootstrap. Então é só isso.</p>
-      <p class="mb-3 ml-6">Quero dizer, eu curto a ideia de não usar o <span class="text-sky-600">CSS</span>, porém se não modificar o <span class="text-sky-600">CSS</span> do <span class="text-violet-600">Boostrap</span>, vai ficar com a cara <span class="text-violet-600">Boostrap</span>. Só que isso muda, quando eu conheci o ...</p>
-
-      <h5 class="text-xl text-sky-600 ml-3">Tailwind - Básico</h5>
-      <p class="mb-3 ml-6">... O <span class="text-sky-600">Tailwind</span></p>
-      <p class="mb-3 ml-6">Meu Deus, como que eu não conheci isso antes de boostrap, os meus dois projetos, os <a href="./projects/esportex.html" class="underline font-bold">EsporteX</a> e <a href="./projects/character-sheet.html" class="underline font-bold">Character sheet</a>, seriam mais bonitos e mais user-friendly.</p>
-      <p class="mb-3 ml-6">O portfólio que você está vendo é feito com <span class="text-sky-600">Tailwind</span>. Bonito, não acha?</p>
-      
-    </p>
-    <p class="my-6">Caso você queira entrar em contanto comigo, basta enviar um <a class="font-bold underline decoration-purple-500 " href="mailto:alexandre.dosa@gmail.com">email</a> ou vai lá no superior direito que tem o meu <span class="text-green-400">GitHub</span> e <span class="text-green-400">LinkedIn</span> e pode me mandar um DM.</p>
-  </div>
-</div>
-    </main>
-    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
-  </body>
 </html>
