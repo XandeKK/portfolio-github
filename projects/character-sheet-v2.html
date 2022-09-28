@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="dark:bg-gray-800">
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 z-30">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a class="flex items-center" href="/portfolio-github">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Home</span>
+      </a> <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="hamburger-icon">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" id="list-navbar">
+          <li>
+            <a href="https://www.linkedin.com/in/alexandre-dos-santos-alves-707921206/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/XandeKK/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="md:px-4 px-2 w-full">
+    <div>
+      <h1 class="font-bold text-4xl text-center my-10 text-white">Character Sheet</h1>
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-60 overflow-hidden rounded-lg md:h-[36rem]">
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/0.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/1.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/2.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/3.gif" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/3.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/4.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/5.gif" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/5.png" />
+          </div>
+          <div class="duration-900 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 dark:bg-gray-500" data-carousel-item="">
+            <img class="absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="../assets/character-sheet-v2/6.png" />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+      <div class="my-28 text-white md:w-9/12 m-auto text-lg">
+        <p class="mb-6">
+          Para quem não sabe o que é RPG de mesa, deixe-me explicar. <br>
+          RPG de Mesa é um jogo onde jogadores se juntam ao redor de uma mesa e interpretam personagens criados por eles, dando uma cara e um perfil com emoções, falas, habilidades e trejeitos, dentro de aventuras estipuladas por um sistema de um mundo fantástico.
+        </p>
+        <p class="mb-6">
+          O motivo de eu ter criado esse aplicativo é que, é meio cansativo gerenciar o personagem no papel, então eu pensei, por que não criar um aplicativo que gerenciar a ficha do personagem.
+        </p>
+        <p class="mb-6">
+          Só que fui um passo além, por que não colocar uma página onde você ver uma mesa e um chat, em que, a partir do seu celular na página do seu personagem, você pode rolar um dado para ver na página de mesa. Então para caso da página de mesa, é recomendável que seja na tv, pois é maior e dessa forma todo mundo do grupo consegue ver o resultado do dado.
+        </p>
+        <p class="mb-6">
+          Também tem outro recurso, em que o mestre consegue ver as vidas dos personagens dos jogadores, para caso ele planeja ferrar os personagens.
+        </p>
+        <p class="mb-6">
+          Bem, agora eu vou mostrar quais foram as tecnologias que foram usados e possivelmente explicar o porquê desse especifico tecnologia.
+        </p>
+        <h3 class="text-4xl mb-3 text-pink-500">As tecnologias</h3>
+        <div class="ml-8 mb-6">
+          <ul class="list-disc list-inside">
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Linguagem</h4>
+            <li>Ruby - Versão 3.1.2</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Frameworks</h4>
+            <li>Ruby on Rails - Versão 7.0.3.1</li>
+            <li>Boostrap - Versão 5.2</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Banco de dado</h4>
+            <li>PostgreSQL - Versão Ubuntu 14.5.1.pgdg22.04+1</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Gem</h4>
+            <li>Clearance - Versão 2.6.0</li>
+            <p class="ml-4 mb-3">O Clearance é usado para autenticação com email e senha.</p>
+            <li>Active Storage Base64 - Versão 2.0.0</li>
+            <p class="ml-4 mb-3">O Active Storage Base64 adiciona o suporte de Base64 no Active Storage.</p>
+            <li>Image processing - Versão 1.2</li>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Biblioteca de javascript</h4>
+            <li>@3d-dice/dice-box - Versão 1.0.5</li>
+            <p class="ml-4 mb-3">O Dice box foi usado para animação 3d de dados.</p>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Software de terceiros</h4>
+            <li>libvips - Versão 8.6+ ou ImageMagick - Versão 7.1.0-47</li>
+            <p class="ml-4 mb-3">O libvips/ImageMagick é necessário para transformação e análise de imagem.</p>
+            <h4 class="text-3xl -ml-4 my-4 text-sky-400">Outros</h4>
+            <li>Active Record - Versão 7.0.4</li>
+            <li>Active Storage - Versão 7.0.4</li>
+            <li>pg - Versão 1.1</li>
+            <li>Turbo Rails - Versão 1.1.1</li>
+            <li>Importmap Rails - Versão 1.1.5</li>
+            <li>puma - Versão 5.0</li>
+            <li>Sprockets Rails - Versão 3.4.2</li>
+            <li>Jbuilder - Versão 2.11.5</li>
+            <li>Stimulus Rails - Versão 1.1.0</li>
+            <li>Redis - Versão 4.8.0</li>
+            <li>Tzinfo Data - Versão 1.2022.3</li>
+          </ul>
+        </div>
+        <p>
+          A maior parte da aplicação já está completa, faltando adicionar alguma versatilidade no sistema de rpg.
+        </p>
+        <p>
+          E também tem a versão antiga que foi feita com bootstrap e que não é tão bonito.
+          Mas você pode ver clicando <a href="./character-sheet.html" class="text-green-400">aqui</a>.
+        </p>
+        <p class="mt-3">
+          Clique <a class="text-green-400" target="_blank" href="https://github.com/XandeKK/Character-Sheet">aqui</a> para versão atual.
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+</body>
+
+</html>
