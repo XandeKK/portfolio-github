@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Portfolio - Audio Player</title>
+  <title>Portfolio - Maptool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../assets/stylesheets/application.css" rel="stylesheet">
 </head>
@@ -32,64 +32,81 @@
     </div>
   </nav>
   <div class="bg-zinc-900 sm:mx-10 md:mx-24 my-6 rounded p-3">
-    <h1 class="text-blue-500 text-center text-xl md:text-2xl mb-3">Audio player</h1>
+    <h1 class="text-blue-500 text-center text-xl md:text-2xl mb-3">Maptool</h1>
     <p class="whitespace-pre-line mb-3">
-      O repositório: <a class="underline font-bold" href="https://github.com/XandeKK/Audio-player" target="_blank">Audio player</a>
+      O repositório: <a class="underline font-bold" href="https://github.com/XandeKK/Maptool" target="_blank">Maptool</a>
 
       Eu vou dividir em categorias para explicar sobre o projeto, as categorias são: qual é o propósito, as dificuldades do projeto, o que mudaria hoje, o que foi usado e minha opinião sincera sobre o projeto.
       
     </p>
 
-    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/audio-player/1.png" alt="image 1">
+    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/maptool/1.png" alt="image 1">
     
     <h2 class="text-blue-500 text-lg mb-3">O propósito:</h2>
 
     <p class="whitespace-pre-line mb-3">
-      Foi para treinar algumas coisas, como Tailwind, Turbo Hotwire, Stimulus e Ransack.
+      O objetivo é criar uma aplicação web que fosse capaz de interagir com um aplicativo desktop <a href="https://github.com/RPTools/maptool" class="text-green-500 underline" target="_blank">Maptool</a> (é um Virtual Tabletop para jogos de RPG com jogadores remotos ou cara a cara).
+
+      Então não seria necessário os jogadores trazerem os seus notebook para campanha de RPG, só basta ter o celular e conectar no site e pronto.
+
+      Atualmente, o projeto só tem a capacidade de alterar as propriedades e movimentar o token e um chat, para caso queira uma conversa privada.
 
     </p>
 
-    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/audio-player/2.png" alt="image 2">
+    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/maptool/2.png" alt="image 2">
 
     <h2 class="text-blue-500 text-lg mb-3">As dificuldades:</h2>
 
     <p class="whitespace-pre-line mb-3">
-      Bem, eu não tenho nenhuma dificuldade para relatar.
+      Esse foi o projeto que tive a maior dificuldade que enfrentei na programação.
+
+      A dificuldade foi, como eu posso interagir uma aplicação web <span class="text-rose-500">Ruby</span> com uma aplicação desktop <span class="text-yellow-500">Java</span>?
+
+      Eu fiquei muito tempo, acho foi dois anos que fiquei somente nessa dúvida.
+
+      É obvio que eu não fiquei preso nele, senão seria estupidez, então eu decidi dar um pausa até que eu conseguisse um resposta.
+
+      Então teve bastante tentativas e erros, até que no final do 2022, eu decidi me focar só nele, pois não tinha nada para fazer e finalmente eu consegui fazer.
+
+      Depois disso, o resto foi mamão com acuçar.
 
     </p>
 
-    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/audio-player/3.png" alt="image 3">
+    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/maptool/3.png" alt="image 3">
 
     <h2 class="text-blue-500 text-lg mb-3">O que mudaria hoje:</h2>
 
     <p class="whitespace-pre-line mb-3">
-      Eu mudaria tudo, justamente porque o projeto não teve tanta atenção.
+      Bem, não sei o que mudar, uma única coisa que sinto que tenho melhorar seria a comunicação socket, pois eu sinto um atraso, quando ocorre uma massiva de informação sendo transportada.
+
+      Mas, tirando isso, não tem muito problema.
 
     </p>
 
-    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/audio-player/4.png" alt="image 4"></img>
+    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/maptool/4.png" alt="image 4"></img>
 
     <h2 class="text-blue-500 text-lg mb-3">O que foi usado:</h2>
 
     <p class="whitespace-pre-line mb-3">
-      O framework web foi <span class="text-rose-500">Ruby on Rails</span>.
-      O framework CSS foi <span class="text-indigo-500">Tailwind</span>.
-      O banco de dados foi o <span class="text-sky-500">PostgreSQL</span>.
+      O framework web foi <span class="text-rose-500">Sinatra</span>.
+      O framework CSS foi <span class="text-indigo-500">Tailwind</span> e <span class="text-indigo-500">Flowbite</span>.
+      
+      Para serilização de dados foi usado <span class="text-cyan-500">Protocol Buffers</span>.
+
+      Para comunicação WebSocket entre o navegador e o servidor <span class="text-rose-500">Sinatra</span> foi usado <span class="text-white">Faye</span>.
 
     </p>
-    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/audio-player/5.png" alt="image 5"></img>
+    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/maptool/5.png" alt="image 5"></img>
 
     <h2 class="text-blue-500 text-lg mb-3">A minha opinião:</h2>
     
     <p class="whitespace-pre-line mb-3">
-      Bem, não posso dizer nada, pois não foi feito com dedicação.
+      Bem, eu gostei bastante do resultado, apesar de tomar muito do meu tempo.
     </p>
 
     <p class="whitespace-pre-line mb-3">
       Então é isso, obrigado por ler até aqui e tchau!
     </p>
-
-    <img class="h-auto max-w-full my-3 rounded" src="../assets/images/audio-player/6.png" alt="image 6"></img>
   </div>
 </body>
 
